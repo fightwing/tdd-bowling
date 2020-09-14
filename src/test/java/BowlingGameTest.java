@@ -11,17 +11,17 @@ public class BowlingGameTest {
         for (int i = 0; i < 12; i++){
             game.roll(10);
         }
-        assertEquals(300,game.calculateAllInScore());
-
-
+        assertEquals(300,game.score());
     }
+
     @Test
     void should_return_sum_when_all_zero_score(){
         for (int i = 0; i < 20; i++){
             game.roll(0);
         }
-        assertEquals(0,game.calculateScore());
+        assertEquals(0,game.score());
     }
+
     @Test
     void should_return_sum_when_the_score_includes_fill_in(){
         game.roll(7);
@@ -29,9 +29,6 @@ public class BowlingGameTest {
         for (int i = 0; i < 18; i++){
             game.roll(1);
         }
-        assertEquals(29,game.calculateFillInScore());
+        assertEquals(29,game.score());
     }
-
-
-
 }

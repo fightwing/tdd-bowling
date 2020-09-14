@@ -11,31 +11,31 @@ public class BowlingGame {
     }
 
 
-    public int calculateScore() {
-        int score = 0;
-        for (int i = 0; i < rolls.length; i++){
-            score += rolls[i];
-        }
-        return score;
-    }
+//    public int calculateScore() {
+//        int score = 0;
+//        for (int i = 0; i < rolls.length; i++){
+//            score += rolls[i];
+//        }
+//        return score;
+//    }
+//
+//
+//    public int calculateFillInScore() {
+//        int score = 0;
+//        int index = 0;
+//        for (int round = 0; round < 10; round++){
+//            if (rolls[index]+rolls[index+1] == 10){
+//                score += rolls[index+2]+10;
+//                index = index + 2;
+//            }else {
+//                score += rolls[index] + rolls[index+1];
+//                index = index + 2;
+//            }
+//        }
+//        return score;
+//    }
 
-
-    public int calculateFillInScore() {
-        int score = 0;
-        int index = 0;
-        for (int round = 0; round < 10; round++){
-            if (rolls[index]+rolls[index+1] == 10){
-                score += rolls[index+2]+10;
-                index = index + 2;
-            }else {
-                score += rolls[index] + rolls[index+1];
-                index = index + 2;
-            }
-        }
-        return score;
-    }
-
-    public int calculateAllInScore() {
+    public int score() {
         int score = 0;
         int index = 0;
         for (int round = 0; round < 10; round++){
