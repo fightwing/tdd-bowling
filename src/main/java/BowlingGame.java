@@ -6,8 +6,8 @@ public class BowlingGame {
     public int rolls[] = new int[30];
     public int rollIndex = 0;
 
-    public void roll(int mark){
-        rolls[rollIndex++] = mark;
+    public void roll(int pins){
+        rolls[rollIndex++] = pins;
     }
 
 

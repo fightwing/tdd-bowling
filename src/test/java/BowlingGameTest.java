@@ -7,7 +7,7 @@ public class BowlingGameTest {
 
     BowlingGame game = new BowlingGame();
     @Test
-    void should_return_sum_when_the_score_includes_all_in(){
+    void should_return_sum_when_the_score_includes_strike(){
         for (int i = 0; i < 12; i++){
             game.roll(10);
         }
@@ -23,7 +23,7 @@ public class BowlingGameTest {
     }
 
     @Test
-    void should_return_sum_when_the_score_includes_fill_in(){
+    void should_return_sum_when_the_score_includes_spare(){
         game.roll(7);
         game.roll(3);
         for (int i = 0; i < 18; i++){
